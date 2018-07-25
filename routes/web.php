@@ -18,4 +18,7 @@ Route::get('/auth/google/callback', [
     'uses' => 'Auth\RegisterController@handleProviderCallback',
     'as' => 'register'
 ]);
-Route::post('logout', 'Auth\LoginController@logout')->name('logout');
+Route::post('/logout', [
+    'uses' => 'Auth\LoginController@logout',
+    'as' => 'logout'
+]);

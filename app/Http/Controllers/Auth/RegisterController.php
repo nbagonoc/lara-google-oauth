@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Auth;
 
 use Socialite;
 use App\User;
-use App\Oauth;
 use App\Http\Controllers\Controller;
 
 class RegisterController extends Controller
